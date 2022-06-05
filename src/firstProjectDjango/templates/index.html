@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    {% load static %}
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="">
+    <link rel="icon" type="image/png" href="{% static 'img/favicon.png' %}">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,400i,700,700i" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/slick-theme.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+    <title>Tatoo!</title>
+
+</head>
+<body>
+
+<a class="burger-menu visible-xs" href="#"><i class="fa fa-bars" aria-hidden="true"></i></a>
+
+<div class="menu-mobile ">
+    <a class="close-menu" href="#"><i class="fa fa-close" aria-hidden="true"></i></a>
+    <ul>
+        <li class="current"><a href="#home">Accueil</a></li>
+        <li><a href="#skills">A propos</a></li>
+        <li><a href="#team">L'équipe</a></li>
+        <li><a href="#devise">Notre devise</a></li>
+        <li><a href="#folio">Folio</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</div>
+
+<header class="hidden-xs">
+    <nav id="menu">
+        <ul>
+            <li class="current"><a href="#home">Accueil</a></li>
+            <li><a href="#skills">A propos</a></li>
+            <li><a href="#team">L'équipe</a></li>
+            <li><a href="#devise">Notre devise</a></li>
+            <li><a href="#folio">Folio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="home" data-parallax="scroll" data-speed="0.2" data-image-src="{% static 'img/tatoo.jpg' %}">
+    <h1 class="logo">tatOO!</h1>
+    <a class="go animated infinite pulse" href="#"><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+</section>
+
+<section id="skills">
+    <h1 data-aos="fade-up">A propos</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-6" data-aos="zoom-in">
+                <div class="icon"><i class="fa fa-comments-o" aria-hidden="true"></i></div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam libero diam, porttitor sed ex
+                    aliquet, convallis gravida lectus. Mauris non dui ullamcorper, cursus odio vitae, placerat nisi.
+                    Proin volutpat eget ligula a egestas. Suspendisse at aliquet sapien, non finibus lacus. Proin mattis
+                    purus nisi, viverra pharetra urna blandit vel. Etiam vitae egestas mi.</p>
+            </div>
+            <div class="col-md-4 col-sm-6" data-aos="zoom-in">
+                <div class="icon"><i class="fa fa-star-o" aria-hidden="true"></i></div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam libero diam, porttitor sed ex
+                    aliquet, convallis gravida lectus. Mauris non dui ullamcorper, cursus odio vitae, placerat nisi.
+                    Proin volutpat eget ligula a egestas. Suspendisse at aliquet sapien, non finibus lacus. Proin mattis
+                    purus nisi, viverra pharetra urna blandit vel. Etiam vitae egestas mi.</p>
+            </div>
+            <div class="col-md-4 col-sm-12 last-skills" data-aos="zoom-in">
+                <div class="icon"><i class="fa fa-smile-o" aria-hidden="true"></i></div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam libero diam, porttitor sed ex
+                    aliquet, convallis gravida lectus. Mauris non dui ullamcorper, cursus odio vitae, placerat nisi.
+                    Proin volutpat eget ligula a egestas. Suspendisse at aliquet sapien, non finibus lacus. Proin mattis
+                    purus nisi, viverra pharetra urna blandit vel. Etiam vitae egestas mi.</p>
+            </div>
+        </div>
+        <div class="text-center mTop50">
+            <a data-aos="fade-up" class="btn"
+               href="mailto:tuto@adriengazaix.fr&subject=Demande d'informations depuis le site">Contactez-nous</a>
+        </div>
+    </div>
+</section>
+
+<section id="team">
+    <h1 data-aos="fade-up">Notre équipe <span>de super tatoueuses</span></h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-xs-6" data-aos="fade-right">
+                <div class="card card-01">
+                    <h2>Jane</h2>
+                </div>
+            </div>
+            <div class="col-md-3 col-xs-6" data-aos="fade-up">
+                <div class="card card-02">
+                    <h2>Angelina</h2>
+                </div>
+            </div>
+            <div class="col-md-3 col-xs-6" data-aos="fade-up">
+                <div class="card card-03">
+                    <h2>Tiffany</h2>
+                </div>
+            </div>
+            <div class="col-md-3 col-xs-6" data-aos="fade-left">
+                <div class="card card-04">
+                    <h2>Mia</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="devise" data-parallax="scroll" data-speed="0.2" data-image-src="{%static 'img/banner.jpg' %}">
+    <div class="container">
+        <p data-aos="zoom-in">" Le tatouage est avant tout une passion. "</p>
+    </div>
+</section>
+
+<section id="folio">
+    <div class="container">
+        <h1>Nos OEUVRES <b>d'art</b></h1>
+        <div class="row slider">
+            <div class="col-md-4 col-xs-12">
+                <a data-fancybox="gallery" data-caption="Mon super premier tatouage !"
+                   href=" {% static 'img/oeuvres/oeuvre01.jpg' %}">
+                    <img class="img-responsive"
+                         src="{% static 'img/oeuvres/oeuvre01_small.jpg' %}" alt="oeuvre 01">
+                </a>
+            </div>
+            <div class="col-md-4 col-xs-12">
+                <a data-fancybox="gallery"
+                   href="{% static 'img/oeuvres/oeuvre02.jpg' %}">
+                    <img class="img-responsive"
+                         src="{% static 'img/oeuvres/oeuvre02.jpg' %}" alt="oeuvre 02">
+                </a>
+            </div>
+            <div class="col-md-4 col-xs-12">
+                <a data-fancybox="gallery"
+                   href="{% static 'img/oeuvres/oeuvre03.jpg' %}">
+                    <img class="img-responsive"
+                         src="{% static 'img/oeuvres/oeuvre03.jpg' %}" alt="oeuvre 03">
+                </a>
+            </div>
+            <div class="col-md-4 col-xs-12">
+                <a data-fancybox="gallery"
+                   href="{% static 'img/oeuvres/oeuvre04.jpg' %}">
+                    <img class="img-responsive"
+                         src="{% static 'img/oeuvres/oeuvre04.jpg' %}" alt="oeuvre 04">
+                </a>
+            </div>
+            <div class="col-md-4 col-xs-12">
+                <a data-fancybox="gallery"
+                   href="{% static 'img/oeuvres/oeuvre05.jpg' %}">
+                    <img class="img-responsive"
+                         src="{% static 'img/oeuvres/oeuvre05.jpg' %}" alt="oeuvre 05">
+                </a>
+            </div>
+<!--            <div class="col-md-4 col-xs-12">-->
+<!--                <a data-fancybox="gallery"-->
+<!--                   href="{% static 'img/oeuvres/oeuvre06.jpg' %}">-->
+<!--                    <img class="img-responsive"-->
+<!--                         src="{% static 'img/oeuvres/oeuvre06.jpg' %}" alt="oeuvre 06">-->
+<!--                </a>-->
+<!--            </div>-->
+        </div>
+    </div>
+</section>
+
+<footer id="contact">
+    <div class="container">
+        <div class="text-center" data-aos="zoom-in">
+            <i class="fa fa-envelope-o" aria-hidden="true"></i>
+        </div>
+        <div class="text-center contact-email" data-aos="fade-up">
+            <a href="mailto:tuto@adriengazaix.fr">tuto@adriengazaix.fr</a>
+            <p class="tel">Tél. : 06.00.00.00.00</p>
+        </div>
+        <div class="text-center contact-icons" data-aos="zoom-in">
+            <a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-google-plus-square" aria-hidden="true"></i></a>
+        </div>
+        <div class="row contact-infos">
+            <div class="col-xs-6">
+                ©2017 Spykrew07
+            </div>
+            <div class="col-xs-6 text-right">
+                <a data-toggle="modal" data-target="#modalMentions" href="#">Mentions légales</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div class="modal fade" id="modalMentions" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header text-center">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h3>Mentions légales</h3>
+            </div>
+            <div class="modal-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget sodales sem, at tincidunt
+                    dui. Nunc eu lobortis magna. Suspendisse potenti. Ut consectetur massa ut sem aliquet pharetra vel
+                    ut lectus. Integer auctor dui sed est ultrices, in malesuada dolor condimentum. Nam porttitor
+                    sollicitudin ante at viverra. Ut vehicula neque sem, in eleifend magna commodo in. Donec tempor
+                    massa sed mi commodo ultricies.</p>
+                <p>Ut scelerisque vel massa a porta. Aenean diam velit, rutrum a orci in, faucibus euismod dui. Nulla
+                    convallis lacinia dolor, vitae laoreet elit viverra ac. Suspendisse pharetra euismod lorem, eget
+                    elementum augue vehicula quis. Aliquam vehicula ex dolor, bibendum lacinia lectus suscipit in.
+                    Praesent eget condimentum lorem. Maecenas pharetra vitae massa ut tempus. Aliquam sagittis lectus
+                    augue, id sollicitudin mi varius eu. Sed consequat, risus molestie pulvinar scelerisque, felis
+                    sapien vulputate urna, ut volutpat sem nulla quis nibh. Donec eget convallis velit. Nulla in arcu
+                    nisl.</p>
+                <p>In dignissim lacus imperdiet nisl egestas fringilla. Etiam ac odio velit. Maecenas efficitur ut
+                    tellus et congue. Mauris auctor augue et leo pretium semper. Quisque quis rhoncus lectus. Nunc
+                    ultrices maximus turpis. Curabitur nisi urna, fringilla et scelerisque vel, faucibus id risus. Etiam
+                    elementum sem ut elit vehicula auctor. Fusce tincidunt accumsan eros, sed molestie felis lobortis
+                    nec. Aliquam semper sapien bibendum molestie auctor. Aenean erat felis, vestibulum id fringilla
+                    vitae, venenatis ut ipsum. Phasellus viverra massa eu mattis interdum.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.js"></script>
+<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+<script src="{% static 'js/parallax.js' %}"></script>
+<script src="{% static 'js/nav.js' %}"></script>
+<script src="{% static 'js/tilt.js' %}"></script>
+<script src="{% static 'js/tatoo.js' %}"></script>
+
+<script> AOS.init({delay: 100}); </script>
+
+</html>

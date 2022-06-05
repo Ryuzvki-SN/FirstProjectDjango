@@ -1,0 +1,529 @@
+/* ---- RESET ---- */
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Droid Serif', sans-serif;
+    color: #000;
+    overflow-x: hidden;
+}
+
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+    cursor: default;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 48px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    margin: 0;
+    padding: 0 0 50px 0;
+}
+
+h1 span {
+    display: block;
+    margin-top: 15px;
+    font-size: 24px;
+    color: #EF017C;
+    font-style: italic;
+    font-family: 'Droid Serif', sans-serif;
+    text-transform: none;
+    font-weight: normal;
+    letter-spacing: 0;
+}
+
+h2 {
+    display: block;
+    font-size: 24px;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+h3 {
+    text-transform: uppercase;
+    color: #EF017C;
+    letter-spacing: 10px;
+}
+
+a {
+    color: #EF017C;
+    transition: 0.3s;
+}
+
+a:hover, a:focus {
+    color: #EF017C;
+    text-decoration: none;
+}
+
+p {
+    line-height: 1.6;
+}
+
+.btn {
+    background: transparent;
+    border: 2px solid #EF017C;
+    color: #EF017C;
+    border-radius: 50px;
+    padding: 8px 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: #EF017C;
+    color: #fff;
+}
+
+.mTop50 {
+    margin-top: 50px;
+}
+
+/* ---- FONTS ---- */
+
+@font-face {
+    font-family: "BlowBrush";
+    src: url("../fonts/blowbrush.eot?") format("eot"),
+    url("../fonts/blowbrush.woff") format("woff"),
+    url("../fonts/blowbrush.ttf") format("truetype"),
+    url("../fonts/blowbrush.svg#BlowBrush") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* ---- MENU MOBILE ---- */
+
+.burger-menu, .close-menu {
+    display: inline-block;
+    position: fixed;
+    z-index: 100;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+}
+
+.menu-mobile {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 200;
+    background: #EF017C;
+    background: linear-gradient(60deg, rgba(255, 93, 177, 0.8) 0%, #ef017c 100%);
+}
+
+.menu-mobile ul {
+    margin: 100px 0 0 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+    font-family: 'BlowBrush', sans-serif;
+    font-size: 36px;
+    text-transform: uppercase;
+    text-shadow: 0 10px 10px rgba(0, 0, 0, 0.15);
+}
+
+.menu-mobile li {
+    transform: rotate(-3deg) skew(-10deg);
+    margin-bottom: 10px;
+}
+
+.menu-mobile a {
+    color: #fff;
+}
+
+.menu-mobile a:hover {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.menu-mobile li.current a {
+    color: #000 !important;
+}
+
+.close-menu {
+    color: #fff;
+}
+
+.close-menu:hover {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* ---- HEADER ---- */
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    padding: 30px 50px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    text-align: right;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    transition: 0.5s;
+}
+
+header.fix-white {
+    background: #fff;
+    border-bottom: 1px solid #fff;
+    padding: 15px 50px;
+    text-align: center;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header li {
+    display: inline-block;
+    padding: 0 10px;
+}
+
+header a {
+    color: #fff;
+}
+
+header.fix-white a {
+    color: #000;
+}
+
+header.fix-white a:hover {
+    color: #dcdcdc;
+}
+
+.current a {
+    color: #EF017C !important;
+}
+
+/* ---- HOME ---- */
+
+#home {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#home h1 {
+    margin: 0;
+    padding: 0;
+    text-transform: none;
+}
+
+.logo {
+    font-family: 'BlowBrush', sans-serif;
+    color: #fff;
+    font-size: 180px;
+    letter-spacing: 5px;
+    text-shadow: 0 15px 15px rgba(0, 0, 0, 0.15);
+    transform: rotate(-3deg) skew(-10deg);
+}
+
+.go {
+    display: block;
+    position: absolute;
+    left: calc(50% - 25px);
+    bottom: 50px;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #fff;
+    text-align: center;
+    color: #fff;
+    border-radius: 50px;
+    font-size: 20px;
+    padding-top: 8px;
+}
+
+.go:hover {
+    background: #fff;
+}
+
+/* ---- SKILLS ---- */
+
+#skills {
+    padding: 100px 0;
+}
+
+#skills p {
+    text-align: justify;
+}
+
+.icon {
+    text-align: center;
+}
+
+.icon i {
+    color: #EF017C;
+    font-size: 72px;
+    padding-bottom: 30px;
+}
+
+/* ---- TEAM ---- */
+
+#team {
+    background: #000;
+    padding: 100px 0;
+}
+
+#team h1 {
+    color: #fff;
+}
+
+.card {
+    position: relative;
+    height: 300px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+    opacity: 0.5;
+}
+
+.card:hover {
+    opacity: 1;
+}
+
+.card-01 {
+    background: #fff url(../img/woman.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.card-02 {
+    background: #fff url(../img/woman2.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.card-03 {
+    background: #fff url(../img/woman3.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.card-04 {
+    background: #fff url(../img/woman4.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.card h2 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    opacity: 0;
+    text-shadow: 0 3px 20px rgba(0, 0, 0, 0.8);
+    color: #fff;
+    transition: 0.5s;
+    transform: rotate(-3deg) skew(-10deg);
+}
+
+.card:hover h2 {
+    bottom: 30px;
+    opacity: 1;
+}
+
+/* ---- DEVISE ---- */
+
+#devise {
+    height: 500px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+#devise p {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-size: 48px;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.9);
+    font-style: italic;
+    font-weight: bold;
+    letter-spacing: -2px;
+    cursor: default;
+}
+
+/* ---- FOLIO ---- */
+
+#folio {
+    width: 100%;
+    height: 100%;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#folio h1 {
+    margin-bottom: 50px;
+    color: #fff;
+    font-family: 'BlowBrush', sans-serif;
+    font-size: 100px;
+    text-transform: none;
+    transform: rotate(-3deg) skew(-10deg);
+}
+
+#folio h1 b {
+    color: #EF017C;
+}
+
+.slider a {
+    display: block;
+    border: 4px solid transparent;
+    overflow: hidden;
+}
+
+.slider a:hover {
+    border: 4px solid #fff;
+}
+
+.slider img {
+    filter: grayscale(100%);
+    transition: 2s;
+}
+
+.slider a:hover img {
+    filter: grayscale(0%);
+    transform: scale(1.2);
+}
+
+/* ---- CONTACT ---- */
+
+#contact {
+    height: 500px;
+    font-size: 11px;
+    color: #fff;
+    padding-top: 100px;
+    background: #EF017C;
+    background: linear-gradient(to right, #fe5baf 0%, #ef017c 100%);
+}
+
+.contact-email a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+    color: #fff;
+}
+
+.contact-email a:hover {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.fa-envelope-o {
+    color: rgba(255, 255, 255, 0.25);
+    font-size: 72px;
+    margin-bottom: 30px;
+}
+
+.tel {
+    font-size: 24px;
+    color: #fff;
+}
+
+.contact-icons a {
+    color: rgba(255, 255, 255, 0.25);
+    font-size: 24px;
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.contact-icons a:hover {
+    color: #fff;
+}
+
+.contact-infos {
+    margin-top: 90px;
+    padding-top: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+    cursor: default;
+}
+
+.contact-infos a {
+    color: #fff;
+}
+
+.contact-infos a:hover {
+    text-decoration: underline;
+}
+
+/* ---- RESPONSIVE ---- */
+
+@media (max-width: 768px) {
+
+    h1 {
+        font-size: 36px;
+    }
+
+    #skills, #team {
+        padding: 50px 0;
+        overflow: hidden;
+    }
+
+    #skills p {
+        margin-bottom: 30px;
+    }
+
+    .last-skills p {
+        margin-bottom: 0 !important;
+    }
+
+    .logo {
+        font-size: 72px;
+    }
+
+    #devise {
+        height: 300px;
+    }
+
+    #devise p {
+        font-size: 36px;
+    }
+
+    #contact {
+        height: 470px;
+    }
+
+    .contact-email a {
+        font-size: 30px;
+    }
+
+    #folio {
+        display: block !important;
+        height: auto;
+        padding-bottom: 50px;
+    }
+
+    #folio h1 {
+        font-size: 48px;
+        margin: 50px 0 0 0;
+    }
+
+    .slider {
+        margin: 0 0 30px 0;
+    }
+
+    .slick-arrow {
+        display: none !important;
+    }
+
+    .card {
+        height: 200px;
+    }
+
+    .card h2 {
+        font-size: 18px;
+    }
+
+}
